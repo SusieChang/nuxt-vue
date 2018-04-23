@@ -39,12 +39,17 @@
 .footer-grid {
   width: 30%;
   height: 100%;
-  margin: 5% 10% 5% 10%;
+  margin: 6% 10% 6% 10%;
   float: left;
   text-align: left;
 }
 
 .footer_copy {
   text-align: center;
+}
+ul,li{
+    list-style-type:none;
+    padding:0;
+    margin:10px 0px 10px 0px;
 }
 </style>

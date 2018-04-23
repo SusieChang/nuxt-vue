@@ -9,10 +9,10 @@
             <b-dropdown-item href="#">定位城市：<span class="city-name">广州</span></b-dropdown-item>
             <b-dropdown-item href="#"><b-list-group class="city-list"></b-list-group></b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="#">首页</b-nav-item>
-          <b-nav-item href="#" disabled>影院</b-nav-item>
-          <b-nav-item href="#" disabled>电影</b-nav-item>
-          <b-nav-item href="#" disabled>热点</b-nav-item>
+          <b-nav-item href="/">首页</b-nav-item>
+          <b-nav-item href="/cinema">影院</b-nav-item>
+          <b-nav-item href="movies">电影</b-nav-item>
+          <b-nav-item href="/hot">热点</b-nav-item>
         </b-navbar-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">

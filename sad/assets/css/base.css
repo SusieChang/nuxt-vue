@@ -11,3 +11,7 @@
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
+
+ul, li {
+   text-decoration: none;
+}

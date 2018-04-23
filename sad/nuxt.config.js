@@ -16,7 +16,7 @@ module.exports = {
   },
   css: [
     '~/assets/css/base.css',
-    '~/assets/css/normalize.css'
+    '~/assets/font-awesome/css/font-awesome.min.css'
   ],
   modules: [
     'bootstrap-vue/nuxt',
