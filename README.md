@@ -6,3 +6,6 @@
  
  #bootstrap-vue
  https://bootstrap-vue.js.org/
+ 
+ #example
+ https://github.com/ITCNZ/mynuxt
