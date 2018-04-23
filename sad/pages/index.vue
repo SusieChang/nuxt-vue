@@ -1,10 +1,10 @@
 <template>
-    <div class="container">
+    <section class="container">
       <div>
         sdfdsvfvksnvjnfvknfdgkjnvdfjgnvjg<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>g<br>
         dsfvsfvlkfdgmgkfdmbfdjmlfgjk
       </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -14,3 +14,6 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+</style>

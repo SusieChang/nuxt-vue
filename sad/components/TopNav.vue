@@ -54,12 +54,12 @@
     position: fixed;
     top: 0;
   }
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 960px) {
     .top-navbar {
       height: 60px;
     }
   }
-  @media screen and (max-width: 499px) {
+  @media screen and (max-width: 959px) {
     .top-navbar {
       height: fit-content;
     }

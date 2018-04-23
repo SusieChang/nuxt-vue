@@ -1,12 +1,12 @@
 <template>
   <div>
-    <b-header>
+    <div class="header">
       <topnav/>
       <!--end of navbar-->
-    </b-header>>
-    <div>
-      <nuxt/>
     </div>
+
+      <nuxt/>
+
     <div class="footer">
       <bottomfooter/>
     </div>
@@ -26,4 +26,9 @@
 </script>
 
 <style>
+  html, body{
+    background-color: #D499B9;
+    margin: 0;
+    padding: 0;
+  }
 </style>
