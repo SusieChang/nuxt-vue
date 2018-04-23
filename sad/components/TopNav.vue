@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="dark" class="top-navbar">
+  <b-navbar toggleable="lg"  class="top-navbar" style="background-color:#2E294E;" type="dark">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <b-navbar-brand href="#">STAR MOVIE</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
@@ -47,22 +47,21 @@
     height: 40px;
   }
 
+  .top-navbar {
+    color: white;
+    width: 100%;
+    background-color: #282c37;
+    position: fixed;
+    top: 0;
+  }
   @media screen and (min-width: 500px) {
     .top-navbar {
-      color: white;
-      width: 100%;
       height: 60px;
-      background-color: #282c37;
-      position: fixed;
-      top: 0;
     }
   }
   @media screen and (max-width: 499px) {
     .top-navbar {
-      color: white;
-      width: 100%;
       height: fit-content;
-      background-color: #282c37;
     }
   }
 </style>

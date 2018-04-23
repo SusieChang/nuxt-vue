@@ -28,12 +28,16 @@
 
 <style scoped>
 .bottom-footer{
-  background-color:black;
-  color: gray;
+  background-color:#2E294E;
+  color: lightgray;
   width: 100%;
   height: fit-content;
   margin: 0;
   text-align: center;
+}
+
+a {
+  color: lightgray;
 }
 
 .footer-grid {

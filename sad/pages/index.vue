@@ -9,6 +9,8 @@
 
 <script>
 export default {
-    layout: 'custom1',
+  head: {
+  'title': '首页',
+  }
 }
 </script>
