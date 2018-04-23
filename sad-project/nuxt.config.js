@@ -11,16 +11,15 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // { type:"text/css", rel:"stylesheet", href:"//unpkg.com/bootstrap/dist/css/bootstrap.min.css"},
-      // {type:"text/css", rel:"stylesheet", href:"//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"},
+      { rel: 'stylesheet', type: 'text/css', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'},
     ]
   },
   css: [
-    '~/assets/css/base.css'
+    '~/assets/css/base.css',
+    '~/assets/css/normalize.css'
   ],
   modules: [
     'bootstrap-vue/nuxt',
-
     // Or if you have custom bootstrap CSS...
     ['bootstrap-vue/nuxt', { css: false }],
   ],
