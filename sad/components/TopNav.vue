@@ -53,6 +53,7 @@
     background-color: #282c37;
     position: fixed;
     top: 0;
+    z-index: 99;
   }
   @media screen and (min-width: 960px) {
     .top-navbar {
