@@ -24,11 +24,3 @@
     },
   }
 </script>
-
-<style>
-  html, body{
-    background-color: #D499B9;
-    margin: 0;
-    padding: 0;
-  }
-</style>

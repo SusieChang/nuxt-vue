@@ -52,6 +52,7 @@
     width: 100%;
     background-color: #282c37;
     position: fixed;
+    font-size: 18px;
     top: 0;
     z-index: 99;
   }

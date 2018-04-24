@@ -8,20 +8,20 @@
       <div class="news-box-container clearfix" id="vue-app1">
         <div class="news-box" v-for="item in newsdata" :key="item.id">
           <a  :href="item.newsLink" target="_blank" :title="item.newsTitle">
-            <img class="news-img" :src="item.imgUrl" alt="news img">
+            <img class="news-box-img" :src="item.imgUrl" alt="news img">
           </a>
           <a  :href="item.newsLink" target="_blank" :title="item.newsTitle">
-            <p class="news-title two-line-text text-center">
+            <p class="news-box-title two-line-text text-center">
               {{item.newsTitle}}
             </p>
           </a>
-          <div class="news-info">
+          <div class="news-box-info">
             <small class="update-time text-muted float-left">Last updated {{item.updateTime}} ago</small>
             <small class="view-count float-right"><span class="fa fa-eye"></span>{{item.viewCount}}</small>
           </div>
         </div>
       </div>
-      <a href="/news" class="all-news-ref float-right">更多<span class="fa fa-arrow-right fa-lg"></span></a>
+      <a href="/all-news" class="all-news-ref float-right">更多<span class="fa fa-arrow-right fa-lg"></span></a>
     </div>
     <!--最新视频-->
     <div class="latest-box-container">
@@ -31,15 +31,15 @@
       <div class="video-box-container clearfix" id="vue-app2">
         <div class="video-box card img-fluid" v-for="item in videodata" :key="item.id">
           <a :href="item.videoLink" :title="item.videoTitle" target="_blank">
-            <img class="video-img card-img-top" :src="item.imgUrl" alt="video image">
-            <div class="card-img-overlay">
-              <p class="video-title card-title two-line-text">{{item.videoTitle}}</p>
+            <img class="video-box-img card-img-top" :src="item.imgUrl" alt="video image">
+            <div class="video-box-detail card-img-overlay">
+              <p class="video-box-title card-title two-line-text">{{item.videoTitle}}</p>
               <small class="view-count float-right"><span class="fa fa-play fa-lg"></span>{{item.viewCount}}</small>
             </div>
           </a>
         </div>
       </div>
-      <a href="/news" class="all-video-ref float-right">更多<span class="fa fa-arrow-right fa-lg"></span></a>
+      <a href="/all-news" class="all-video-ref float-right">更多<span class="fa fa-arrow-right fa-lg"></span></a>
     </div>
   </section>
 </template>
@@ -56,17 +56,17 @@
           {
             imgUrl:  require('~/assets/img/1.jpg'),
             newsLink: 'javascript:viod 0',
-            newsTitle: 'null',
-            updateTime: 'null',
-            viewCount: 'null'
+            newsTitle: '...',
+            updateTime: '0 min',
+            viewCount: '0'
           },
         ],
         videodata: [
           {
             imgUrl:  require('~/assets/img/1.jpg'),
             videoLink: 'javascript:viod 0',
-            videoTitle: 'null',
-            viewCount: 'null'
+            videoTitle: '...',
+            viewCount: '0'
           },
         ]
       }
@@ -161,13 +161,13 @@
   }
 </script>
 
-<style scoped>
+<style>
   .hot-container {
-    margin-top: 60px;
+    margin-top: 100px;
   }
   .latest-box-container {
     text-align: center;
-    margin: 100px 0 150px 0;
+    margin: 120px 0 100px 0;
   }
   .news-box {
     display: inline-block;
@@ -180,17 +180,17 @@
     background-color: #eeeeee;
     color: #2E294E;
   }
-  .news-img {
+  .news-box-img {
     width: 300px;
     height: 70%;
   }
-  .news-title {
+  .news-box-title {
     width: 100%;
     height: fit-content;
     margin: 0;
     color: #2E294E;
   }
-  .news-info {
+  .news-box-info {
     width: 100%;
     height: fit-content;
     vertical-align: bottom;
@@ -210,16 +210,16 @@
     overflow: hidden;
     padding: 0;
   }
-  .video-img {
-    width: 300px;
-    height: 220px;
+  .video-box-img {
+    width: 100%;
+    height: 100%;
   }
-  .card-img-overlay:hover {
+  .video-box-detail:hover {
     background-color:  rgba(0,0,0,0.5);
     color: antiquewhite;
     font-size: 16px;
   }
-  .card-img-overlay{
+  .video-box-detail{
     background-color:  rgba(0,0,0,0.1);
     color: white;
     font-size: 16px;
