@@ -1,26 +1,26 @@
 <template>
   <div>
     <div class="header">
-      <topnav/>
+      <top-nav/>
       <!--end of navbar-->
     </div>
 
       <nuxt/>
 
     <div class="footer">
-      <bottomfooter/>
+      <bottom-footer/>
     </div>
   </div>
 </template>
 
 <script>
-  import topnav from '~/components/topnav.vue'
-  import bottomfooter from '~/components/bottomfooter.vue'
+  import TopNav from '~/components/TopNav.vue'
+  import BottomFooter from '~/components/BottomFooter.vue'
 
   export default {
     components: {
-      topnav,
-      bottomfooter
+      TopNav,
+      BottomFooter
     },
   }
 </script>

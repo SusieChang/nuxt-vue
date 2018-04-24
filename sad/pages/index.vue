@@ -7,7 +7,7 @@
     </section>
 </template>
 
-<script>
+<script scoped>
 export default {
   head: {
   'title': '首页',

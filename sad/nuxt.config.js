@@ -23,14 +23,13 @@ module.exports = {
     // Or if you have custom bootstrap CSS...
     ['bootstrap-vue/nuxt', { css: false }],
   ],
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+
+  loading: {
+    color: '#3B8070',
+    height: '5px'
+  },
   build: {
+    extractCSS: true,
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
